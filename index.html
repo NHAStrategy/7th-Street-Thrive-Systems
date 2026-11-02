@@ -9,15 +9,15 @@
 <style>
 :root{
   --purple:#8875FA; --purple-deep:#5A48D9; --purple-tint:#ECE9FE; --purple-glow:rgba(136,117,250,.5); --later-accent:#C9C0FF;
-  --ink:#0E0D12; --paper:#FFFFFF; --tint:#F6F5FB; --muted:#3E3C4D; --line:#D9D7E6; --wire:#C4C2D4; --metric-line:#8E8CA3; --flag:#C8102E;
+  --ink:#0E0D12; --paper:#FFFFFF; --tint:#F3F2FA; --muted:#3E3C4D; --line:#D9D7E6; --wire:#C4C2D4; --metric-line:#8E8CA3; --flag:#C8102E;
   --display:"Unbounded",sans-serif; --sans:"Archivo",system-ui,sans-serif;
 }
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
   --purple:#A99BFF; --purple-deep:#C3BAFF; --purple-tint:#2B2650; --purple-glow:rgba(169,155,255,.5); --later-accent:#5A48D9;
-  --ink:#F2F1F7; --paper:#121120; --tint:#1A1930; --muted:#B3B0C6; --line:#33314D; --wire:#4E4C6E; --metric-line:#817FA0; --flag:#FF5A6E; color-scheme:dark } }
+  --ink:#F2F1F7; --paper:#121120; --tint:#201E38; --muted:#B3B0C6; --line:#33314D; --wire:#4E4C6E; --metric-line:#817FA0; --flag:#FF5A6E; color-scheme:dark } }
 :root[data-theme="dark"]{
   --purple:#A99BFF; --purple-deep:#C3BAFF; --purple-tint:#2B2650; --purple-glow:rgba(169,155,255,.5); --later-accent:#5A48D9;
-  --ink:#F2F1F7; --paper:#121120; --tint:#1A1930; --muted:#B3B0C6; --line:#33314D; --wire:#4E4C6E; --metric-line:#817FA0; --flag:#FF5A6E; color-scheme:dark }
+  --ink:#F2F1F7; --paper:#121120; --tint:#201E38; --muted:#B3B0C6; --line:#33314D; --wire:#4E4C6E; --metric-line:#817FA0; --flag:#FF5A6E; color-scheme:dark }
 *{box-sizing:border-box;margin:0;padding:0}
 [hidden]{display:none!important}
 html{scroll-behavior:smooth}
@@ -74,8 +74,8 @@ section.how .wrap{padding-top:4.2rem;padding-bottom:4rem;display:flex;flex-direc
 .dna{background:var(--purple-tint);border-radius:10px;padding:1.3rem 1.5rem;max-width:860px;font-size:15.5px;display:flex;flex-direction:column;gap:.5rem}
 
 /* ---------- strategy ---------- */
-section.strategy{border-top:3px solid var(--ink);background:var(--tint);scroll-margin-top:70px}
-section.strategy:nth-of-type(even){background:var(--paper)}
+section.strategy{border-top:3px solid var(--ink);background:var(--paper);scroll-margin-top:70px}
+section.strategy.alt{background:var(--tint)}
 section.strategy .wrap{padding-top:4rem;padding-bottom:4.5rem;display:flex;flex-direction:column;gap:2.8rem}
 .shead{display:flex;gap:2.2rem;align-items:flex-start;flex-wrap:wrap}
 .bignum{font-size:clamp(4.5rem,9vw,7.5rem);line-height:.9;color:var(--purple);flex:none}
@@ -242,7 +242,7 @@ footer .wrap{padding-top:1.6rem;padding-bottom:2.4rem;display:flex;justify-conte
 </section>
 
 
-<section class="strategy" id="core" data-strategy="ci">
+<section class="strategy alt" id="core" data-strategy="ci">
   <div class="wrap">
     <div class="shead">
       <div class="bignum display">01</div>
@@ -496,7 +496,7 @@ footer .wrap{padding-top:1.6rem;padding-bottom:2.4rem;display:flex;justify-conte
     </div>
   </div>
 </section>
-<section class="strategy" id="land" data-strategy="al">
+<section class="strategy alt" id="land" data-strategy="al">
   <div class="wrap">
     <div class="shead">
       <div class="bignum display">03</div>
